@@ -15,34 +15,18 @@ const About = () => {
       id="about"
       className="py-20 bg-background relative overflow-hidden"
     >
-      {/* Gradient borders */}
-      <div className="absolute inset-0">
-        <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-[#F7DAE7] to-transparent opacity-60"></div>
-        <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-transparent via-[#F7DAE7] to-transparent opacity-60"></div>
-        <div className="absolute inset-y-0 left-0 w-[2px] bg-gradient-to-b from-transparent via-[#F7DAE7] to-transparent opacity-60"></div>
-        <div className="absolute inset-y-0 right-0 w-[2px] bg-gradient-to-b from-transparent via-[#F7DAE7] to-transparent opacity-60"></div>
-      </div>
-
-      {/* Gradient overlay */}
-      <div
-        className="absolute inset-0 opacity-20"
-        style={{
-          background: `linear-gradient(45deg, #F7DAE7 0%, #E2B4C1 50%, #D38C9D 100%)`,
-        }}
-      ></div>
-
-      {/* Decorative elements */}
+      {/* Decorative elements pakai warna theme */}
       <div className="absolute top-20 left-10 animate-float">
-        <Sparkles className="w-6 h-6 text-[#F7DAE7]" />
+        <Sparkles className="w-8 h-8 text-primary" />
       </div>
       <div className="absolute bottom-20 right-10 animate-float-slow">
-        <Sparkles className="w-8 h-8 text-[#E2B4C1]" />
+        <Sparkles className="w-8 h-8 text-secondary" />
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative">
         <div className="flex flex-col items-center mb-12">
-          <div className="inline-block px-6 py-2 rounded-full bg-[#F7DAE7] mb-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#A95166]">
+          <div className="inline-block px-8 py-4 rounded-full bg-primary mb-4">
+            <h2 className="text-6xl md:text-7xl lg:text-8xl font-extrabold text-primary-foreground text-center">
               ABOUT ME
             </h2>
           </div>
@@ -50,13 +34,13 @@ const About = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
           <div className="lg:col-span-2 space-y-6">
-            {/* Personal Info Card */}
-            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-              <h3 className="text-xl font-semibold mb-4 flex items-center">
-                <div className="p-2 rounded-full bg-blue-200">
-                  <User className="text-blue-600" size={20} />
+            {/* Personal Info Card pakai theme */}
+            <div className="bg-card/90 backdrop-blur-sm p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+              <h3 className="text-2xl font-bold mb-4 flex items-center">
+                <div className="p-2 rounded-full bg-primary/20">
+                  <User className="text-primary" size={28} />
                 </div>
-                <span className="ml-2">Personal Info</span>
+                <span className="ml-2 text-primary">Personal Info</span>
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-center">
@@ -70,7 +54,7 @@ const About = () => {
                     Location:
                   </span>
                   <div className="flex items-center text-muted-foreground">
-                    <MapPin size={16} className="mr-1" />
+                    <MapPin size={18} className="mr-1 text-secondary" />
                     <span>Jakarta, Indonesia</span>
                   </div>
                 </li>
@@ -87,7 +71,7 @@ const About = () => {
                     Email:
                   </span>
                   <div className="flex items-center text-muted-foreground">
-                    <Mail size={16} className="mr-1" />
+                    <Mail size={18} className="mr-1 text-primary" />
                     <a
                       href="mailto:mardianasiti853@gmail.com"
                       className="hover:text-primary transition-colors"
@@ -99,13 +83,13 @@ const About = () => {
               </ul>
             </div>
 
-            {/* Education Card */}
-            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-              <h3 className="text-xl font-semibold mb-4 flex items-center">
-                <div className="p-2 rounded-full bg-green-200">
-                  <Book className="text-green-600" size={20} />
+            {/* Education Card pakai theme */}
+            <div className="bg-card/90 backdrop-blur-sm p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+              <h3 className="text-2xl font-bold mb-4 flex items-center">
+                <div className="p-2 rounded-full bg-secondary/20">
+                  <Book className="text-secondary" size={28} />
                 </div>
-                <span className="ml-2">Education</span>
+                <span className="ml-2 text-secondary">Education</span>
               </h3>
               <div className="space-y-4">
                 <div>
@@ -120,13 +104,13 @@ const About = () => {
               </div>
             </div>
 
-            {/* Languages Card */}
-            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-              <h3 className="text-xl font-semibold mb-4 flex items-center">
-                <div className="p-2 rounded-full bg-purple-200">
-                  <Globe className="text-purple-600" size={20} />
+            {/* Languages Card pakai theme */}
+            <div className="bg-card/90 backdrop-blur-sm p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+              <h3 className="text-2xl font-bold mb-4 flex items-center">
+                <div className="p-2 rounded-full bg-accent/20">
+                  <Globe className="text-accent" size={28} />
                 </div>
-                <span className="ml-2">Languages</span>
+                <span className="ml-2 text-accent">Languages</span>
               </h3>
               <div className="space-y-4">
                 <div>
@@ -152,21 +136,23 @@ const About = () => {
                     className="ml-2 inline-flex items-center text-primary hover:text-primary/80 active:text-primary/60 transition-all hover:scale-125"
                     title="View English Certificate"
                   >
-                    <Award size={16} />
+                    <Award size={18} />
                   </button>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Profile Summary */}
+          {/* Profile Summary pakai theme */}
           <div className="lg:col-span-3 space-y-6">
-            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-              <h3 className="text-xl font-semibold mb-4 flex items-center">
-                <div className="p-2 rounded-full bg-orange-200">
-                  <FileText className="text-orange-600" size={20} />
+            <div className="bg-card/90 backdrop-blur-sm p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+              <h3 className="text-2xl font-bold mb-4 flex items-center">
+                <div className="p-2 rounded-full bg-muted/20">
+                  <FileText className="text-muted-foreground" size={28} />
                 </div>
-                <span className="ml-2">Profile Summary</span>
+                <span className="ml-2 text-muted-foreground">
+                  Profile Summary
+                </span>
               </h3>
               <div className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">

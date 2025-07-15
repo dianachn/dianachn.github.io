@@ -10,12 +10,14 @@
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+  /* Ganti efek hover agar sesuai tema baru */
+  filter: drop-shadow(0 0 2em #1e3a5faa); /* Steel Blue */
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #0b132baa); /* Midnight Navy */
 }
 
 @keyframes logo-spin {
@@ -35,8 +37,13 @@
 
 .card {
   padding: 2em;
+  background: var(--card);
+  color: var(--card-foreground);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px 0 rgba(30, 58, 95, 0.08); /* Steel Blue shadow */
 }
 
 .read-the-docs {
-  color: #888;
+  color: var(--muted-foreground);
 }

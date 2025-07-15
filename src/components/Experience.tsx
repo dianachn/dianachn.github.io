@@ -130,8 +130,8 @@ const Experience = () => {
 
       <div className="container mx-auto px-4 md:px-6 relative">
         <div className="flex flex-col items-center mb-12">
-          <div className="inline-block px-6 py-2 rounded-full bg-accent mb-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-accent-foreground">
+          <div className="inline-block px-8 py-4 rounded-full bg-accent mb-4">
+            <h2 className="text-6xl md:text-7xl lg:text-8xl font-extrabold text-accent-foreground text-center">
               WORK EXPERIENCE
             </h2>
           </div>

@@ -6,91 +6,83 @@
 
 @layer base {
   :root {
-    /* Base colors */
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 214 60% 92%; /* Ice Blue #D6F2F0 */
+    --foreground: 229 86% 8%; /* Midnight Navy #0B132B */
 
-    /* Card and container colors */
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 96%; /* Off-White Gray #F5F5F5 */
+    --card-foreground: 229 86% 8%; /* Midnight Navy #0B132B */
 
-    /* Primary colors */
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 212 53% 24%; /* Steel Blue #1E3A5F */
+    --primary-foreground: 0 0% 100%; /* White */
 
-    /* Secondary colors */
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 0 0% 75%; /* Silver Gray #C0C0C0 */
+    --secondary-foreground: 229 86% 8%; /* Midnight Navy #0B132B */
 
-    /* Accent colors */
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 212 53% 24%; /* Steel Blue #1E3A5F */
+    --accent-foreground: 0 0% 100%; /* White */
 
-    /* UI element colors */
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 0% 75%; /* Silver Gray #C0C0C0 */
+    --muted-foreground: 229 86% 8%; /* Midnight Navy #0B132B */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 96%; /* Off-White Gray #F5F5F5 */
+    --popover-foreground: 229 86% 8%; /* Midnight Navy #0B132B */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
+    --border: 212 53% 24%; /* Steel Blue #1E3A5F */
+    --input: 0 0% 75%; /* Silver Gray #C0C0C0 */
+    --ring: 212 53% 24%; /* Steel Blue #1E3A5F */
 
-    /* Border radius */
     --radius: 1rem;
 
-    /* Sidebar colors */
-    --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 222.2 84% 4.9%;
-    --sidebar-primary: 221.2 83.2% 53.3%;
-    --sidebar-primary-foreground: 210 40% 98%;
-    --sidebar-accent: 210 40% 96.1%;
-    --sidebar-accent-foreground: 222.2 47.4% 11.2%;
-    --sidebar-border: 214.3 31.8% 91.4%;
-    --sidebar-ring: 221.2 83.2% 53.3%;
+    --sidebar-background: 212 53% 24%; /* Steel Blue #1E3A5F */
+    --sidebar-foreground: 0 0% 100%; /* White */
+    --sidebar-primary: 229 86% 8%; /* Midnight Navy #0B132B */
+    --sidebar-primary-foreground: 214 60% 92%; /* Ice Blue #D6F2F0 */
+    --sidebar-accent: 0 0% 75%; /* Silver Gray #C0C0C0 */
+    --sidebar-accent-foreground: 229 86% 8%; /* Midnight Navy #0B132B */
+    --sidebar-border: 0 0% 75%; /* Silver Gray #C0C0C0 */
+    --sidebar-ring: 212 53% 24%; /* Steel Blue #1E3A5F */
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 229 86% 8%; /* Midnight Navy #0B132B */
+    --foreground: 214 60% 92%; /* Ice Blue #D6F2F0 */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 212 53% 24%; /* Steel Blue #1E3A5F */
+    --card-foreground: 214 60% 92%; /* Ice Blue #D6F2F0 */
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 212 53% 24%; /* Steel Blue #1E3A5F */
+    --popover-foreground: 214 60% 92%; /* Ice Blue #D6F2F0 */
 
-    --primary: 217.2 91.2% 59.8%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 214 60% 92%; /* Ice Blue #D6F2F0 */
+    --primary-foreground: 229 86% 8%; /* Midnight Navy #0B132B */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 0 0% 75%; /* Silver Gray #C0C0C0 */
+    --secondary-foreground: 214 60% 92%; /* Ice Blue #D6F2F0 */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 0 0% 75%; /* Silver Gray #C0C0C0 */
+    --muted-foreground: 214 60% 92%; /* Ice Blue #D6F2F0 */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 214 60% 92%; /* Ice Blue #D6F2F0 */
+    --accent-foreground: 229 86% 8%; /* Midnight Navy #0B132B */
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 214 60% 92%; /* Ice Blue #D6F2F0 */
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 224.3 76.3% 48%;
+    --border: 0 0% 75%; /* Silver Gray #C0C0C0 */
+    --input: 0 0% 75%; /* Silver Gray #C0C0C0 */
+    --ring: 214 60% 92%; /* Ice Blue #D6F2F0 */
 
-    --sidebar-background: 222.2 84% 4.9%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 217.2 91.2% 59.8%;
-    --sidebar-primary-foreground: 222.2 47.4% 11.2%;
-    --sidebar-accent: 217.2 32.6% 17.5%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 217.2 32.6% 17.5%;
-    --sidebar-ring: 224.3 76.3% 48%;
+    --sidebar-background: 229 86% 8%; /* Midnight Navy #0B132B */
+    --sidebar-foreground: 214 60% 92%; /* Ice Blue #D6F2F0 */
+    --sidebar-primary: 214 60% 92%; /* Ice Blue #D6F2F0 */
+    --sidebar-primary-foreground: 229 86% 8%; /* Midnight Navy #0B132B */
+    --sidebar-accent: 0 0% 75%; /* Silver Gray #C0C0C0 */
+    --sidebar-accent-foreground: 214 60% 92%; /* Ice Blue #D6F2F0 */
+    --sidebar-border: 0 0% 75%; /* Silver Gray #C0C0C0 */
+    --sidebar-ring: 214 60% 92%; /* Ice Blue #D6F2F0 */
   }
 }
 

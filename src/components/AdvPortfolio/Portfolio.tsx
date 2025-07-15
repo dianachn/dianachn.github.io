@@ -16,8 +16,10 @@ function Portfolio() {
   return (
     <div className="min-h-screen bg-background p-4 md:p-8" id="portfolio">
       <header className="max-w-7xl mx-auto mb-8">
-        <h1 className="text-4xl font-bold mb-2">My Portfolio</h1>
-        <p className="text-muted-foreground">
+        <h1 className="text-6xl md:text-7xl lg:text-8xl font-extrabold text-primary text-center mb-2">
+          My Portfolio
+        </h1>
+        <p className="text-muted-foreground text-center text-lg">
           A collection of my creative work
         </p>
       </header>
