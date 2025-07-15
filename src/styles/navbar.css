@@ -12,9 +12,9 @@
   right: 0;
   background: linear-gradient(
     135deg,
-    #f7dae7 0%,
-    /* Pink Mist */ #e2b4c1 50%,
-    /* Bubblegum */ #d38c9d 100% /* Cherry Soda */
+    #d6f2f0 0%,
+    /* Ice Blue */ #1e3a5f 50%,
+    /* Steel Blue */ #0b132b 100% /* Midnight Navy */
   );
   clip-path: polygon(
     0 0,
@@ -46,9 +46,9 @@
   right: 0;
   background: linear-gradient(
     135deg,
-    rgba(247, 218, 231, 0.95) 0%,
-    /* Pink Mist */ rgba(226, 180, 193, 0.95) 50%,
-    /* Bubblegum */ rgba(211, 140, 157, 0.95) 100% /* Cherry Soda */
+    rgba(214, 242, 240, 0.95) 0%,
+    /* Ice Blue */ rgba(30, 58, 95, 0.95) 50%,
+    /* Steel Blue */ rgba(11, 19, 43, 0.95) 100% /* Midnight Navy */
   );
   backdrop-filter: blur(8px);
   clip-path: polygon(
